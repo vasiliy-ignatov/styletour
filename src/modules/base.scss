@@ -1,0 +1,11 @@
+@import "var";
+@import "bootstrap";
+
+html, body {
+  background-color: #fff;
+}
+
+.block	{
+	background-color: #eee;
+	border: 1px solid $gray;
+}
