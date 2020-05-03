@@ -44,6 +44,11 @@ function js() {
 		.pipe(dest(PATHS.OUT + '/js'))
 }
 
+function jquery() {
+	return src('node_modules/jquery/dist/jquery.min.js')
+		.pipe(dest(PATHS.OUT + '/js'))
+}
+
 function jadeTask() {
 	return src(PATHS.IN + '*.jade')
 		.pipe(jade({
@@ -65,11 +70,12 @@ function watchFiles() {
 	watch(PATHS.MODULES  + '**/*.js', js)
 }
 
-const build = series(clean, parallel(vendorJs, css, js, jadeTask))
+const build = series(clean, parallel(vendorJs, jquery, css, js, jadeTask))
 
 exports.default = parallel(browserSync, watchFiles)
 exports.css = css
 exports.js = js
+exports.jquery = jquery
 exports.vendorJs = vendorJs
 exports.build = build
 exports.jadeTask = jadeTask
