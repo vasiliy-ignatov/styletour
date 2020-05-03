@@ -13,8 +13,7 @@ $g-gray: linear-gradient(134.86deg, #C5B6AA 45.49%, #E4DCD5 85.27%);
 
 
 // MEDIA
-$desktopxs: 'max-width: 1920px';
-$desktop: 'max-width: 1400px';
-$tablet: 'max-width: 1024px';
-$phone: 'max-width: 768px';
-$smallphone: 'max-width: 480px';
+$wide: 'max-width: 1200px';
+$medium: 'max-width: 992px';
+$small: 'max-width: 768px';
+$phone: 'max-width: 480px';

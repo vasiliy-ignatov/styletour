@@ -57,6 +57,11 @@ function jadeTask() {
 		.pipe(dest(PATHS.OUT))
 }
 
+function fonts() {
+	return src(PATHS.IN + 'fonts/*.*')
+		.pipe(dest(PATHS.OUT + 'fonts/'));
+}
+
 function vendorJs() {
 	return src(PATHS.VENDOR + '/**/*.js')
 		.pipe(concat('vendor.js'))
@@ -70,11 +75,12 @@ function watchFiles() {
 	watch(PATHS.MODULES  + '**/*.js', js)
 }
 
-const build = series(clean, parallel(vendorJs, jquery, css, js, jadeTask))
+const build = series(clean, parallel(vendorJs, jquery, fonts, css, js, jadeTask))
 
 exports.default = parallel(browserSync, watchFiles)
 exports.css = css
 exports.js = js
+exports.fonts = fonts
 exports.jquery = jquery
 exports.vendorJs = vendorJs
 exports.build = build
