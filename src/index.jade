@@ -3,12 +3,19 @@ extends ./tpl/layout
 block page
 	section.section.section_main
 		.main-slider.js-main-slider
-			.main-slider__item
-				.main-slider__inner(style="background-image: url(/img/slider.jpg)")
-			.main-slider__item
-				.main-slider__inner(style="background-image: url(/img/slider.jpg)")
-			.main-slider__item
-				.main-slider__inner(style="background-image: url(/img/slider.jpg)")
+			each val, index in ['zero', 'one', 'two', 'three']
+				.main-slider__item
+					.main-slider__bg(style="background-image: url(/img/slider.jpg)")
+					.main-slider__wrapper
+						.main-slider__content
+							.container
+								.row
+									.col-10.col-sm-7.text-center
+										.main-slider__title= 'Women\'s Apparel ' + val
+										.main-slider__subtitle
+											| T-Shirts, Dress Shirts, Tanks, Pants and More...
+										a(href="#").btn.btn-red
+											| Shop Women’s Apparel
 		
 		.menu
 			.container

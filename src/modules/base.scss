@@ -1,10 +1,15 @@
 @import "var";
 @import "bootstrap";
+@import "header";
+@import "icon";
+@import "section";
+@import "./mainSlider/mainSlider";
+@import "block/block";
 
 html, body {
 	background-color: $body;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1rem;
+	font-size: $fz-normal;
 	color: $black;
 	min-width: 320px;
 }
@@ -26,7 +31,7 @@ img {
 }
 
 h3 {
-	font-size: 1.5rem;
+	font-size: $fz-medium;
 	font-weight: bold;
 }
 

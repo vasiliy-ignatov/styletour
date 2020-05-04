@@ -34,7 +34,7 @@ function browserSync () {
 }
 
 function css() {
-	return src(PATHS.MODULES + '/**/*.scss')
+	return src(PATHS.MODULES + '/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(concat('main.css'))
 		.pipe(dest(PATHS.OUT + '/css'))
