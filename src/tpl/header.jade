@@ -1,3 +1,38 @@
 header.header
-	.container
-		| header
+	nav.navbar.navbar-expand-lg.navbar-light.bg-white
+		.container
+			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+				span.navbar-toggler-icon
+			#navbarSupportedContent.collapse.navbar-collapse
+				ul.navbar-nav.mr-auto
+					li.nav-item
+						a.nav-link.pl-lg-0(href='#') Supprot
+					li.nav-item
+						a.nav-link(href='#') Free Shipping Over $50
+					li.nav-item
+						a.nav-link(href='#') Articles  
+					li.nav-item.dropdown
+						a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+							span.icon.icon-flag
+							| English
+						.dropdown-menu(aria-labelledby='navbarDropdown')
+							a.dropdown-item(href='#')
+								span.icon.icon-flag
+								| French
+							a.dropdown-item(href='#')
+								span.icon.icon-flag
+								| Russian
+					li.nav-item.dropdown
+						a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+							| Currecy: usd
+						.dropdown-menu(aria-labelledby='navbarDropdown')
+							a.dropdown-item(href='#') EUR
+				form.form-inline.my-2.my-lg-0
+					ul.navbar-nav.mr-auto
+						li.nav-item
+							a.nav-link(href='#') Login
+						li.nav-item
+							a.nav-link(href='#') Signup
+					button.btn.btn-red.my-2.my-sm-0(type='submit')
+						span.icon.icon-cart
+						| Shopping cart

@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "bootstrap": "^4.4.1",
+    "bootstrap-icons": "^1.0.0-alpha3",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
@@ -17,8 +18,10 @@
     "gulp-jade": "^1.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^4.1.0",
-    "jquery": "^3.5.0",
+    "jquery": "^3.4.1",
     "node-sass": "^4.14.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@popperjs/core": "^2.4.0"
+  }
 }

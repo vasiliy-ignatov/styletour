@@ -1,0 +1,18 @@
+.main-slider {
+	width: 100%;
+	position: relative;
+}
+
+.main-slider__item {
+	width: 100%;
+
+	&:focus {
+		outline: none;
+	}
+}
+.main-slider__inner {
+	padding-bottom: 44.625%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
