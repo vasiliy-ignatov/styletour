@@ -5,14 +5,16 @@ $red: #d51e08;
 $white: #fff;
 $gray: #9D9D9D;
 $gray2: #dadada;
+$gray3: #585858;
 $blue: #358acd;
+$blue2: #0a94b2;
 
 //gradients
 $g-yellow: linear-gradient(70.22deg, #EEB78B 18.62%, #D79D6F 66.52%);
 $g-gray: linear-gradient(134.86deg, #C5B6AA 45.49%, #E4DCD5 85.27%);
 
 // font-size
-$fz-small: .875rem;
+$fz-small: .875rem; // fz 14
 $fz-normal: 1rem;
 $fz-medium: 1.5rem;
 $fz-large: 1.875rem; //font-size: 30px
@@ -24,4 +26,4 @@ $wide: 'max-width: 1200px';
 $medium: 'max-width: 991px';
 $tablet: 'max-width: 768px';
 $small: 'max-width: 720px';
-$phone: 'max-width: 540px';
+$phone: 'max-width: 575px';

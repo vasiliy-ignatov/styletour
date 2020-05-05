@@ -97,7 +97,36 @@ block page
 												a(href="#") Ashworth
 											li
 												a(href="#") Show More
-
+							.row
+								.col-12.col-sm-6.col-md-12
+									.sidebar__item
+										.sidebar-slider.text-center.js-sidebar-slider
+											each val, index in ['zero', 'one']
+												.sidebar-slider__item
+													.sidebar-slider__image
+														img(src="./img/slide-sidebar" + (index + 1) + ".jpg", alt="")
+													.sidebar-slider__wrapper
+														.sidebar-slider__title
+															| Fashion Colors For Women
+														.sidebar-slider__text
+															| Make every category of your webstore look special by setting different color schemes.
+								.col-12.col-sm-6.col-md-12
+									.sidebar__item
+										.sidebar-banner.text-center
+											img(src="./img/banner.jpg", alt="")
+											.sidebar-banner__wrapper
+												.sidebar-banner__text
+													| introducing
+													br
+													span bombshell
+													br
+													| forver
+												button.btn.btn-red Shop now
+							.sidebar__item 
+								.sidebar-about
+									h3 About Store
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+									p.colored Ut enim ad minim veniam, quis nostrud exercitation. Aiusmod tempor incididunt ut labore et dolore magna aliqua
 					.col-12.col-md-9.order-first.order-md-last Content
 	.container
 		.row

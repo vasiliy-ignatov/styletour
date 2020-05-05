@@ -4,10 +4,9 @@
 @import "icon";
 @import "section";
 @import "./mainSlider/mainSlider";
-@import "block/block";
 @import "mainMenu";
 @import "widget";
-@import "sidebar";
+@import "./sidebar/sidebar";
 
 html, body {
 	background-color: $body;
@@ -30,6 +29,7 @@ main {
 
 img {
 	min-width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
