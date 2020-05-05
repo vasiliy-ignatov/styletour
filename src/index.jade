@@ -17,9 +17,31 @@ block page
 										a(href="#").btn.btn-red
 											| Shop Women’s Apparel
 		
-		.menu
+		.main-menu
 			.container
-				| Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam magni quam blanditiis sed, aperiam excepturi tempora ab veniam voluptate natus hic facilis! Hic repellendus vel, eos sunt explicabo rem.
+				nav.navbar.navbar-expand-lg.navbar-dark
+					.navbar-logo
+						img(src="./img/logo.png", alt="")
+					a.navbar-brand(href='#') Styletour
+					button.navbar-toggler(type='button', data-toggle='collapse', data-target='#main-menu', aria-controls='main-menu', aria-expanded='false', aria-label='Toggle navigation')
+						span.navbar-toggler-icon
+					#main-menu.collapse.navbar-collapse
+						ul.navbar-nav.mr-auto
+							li.nav-item
+								a.nav-link(href='#') Shop
+							li.nav-item
+								a.nav-link(href='#') Men
+							li.nav-item
+								a.nav-link(href='#') Women
+							li.nav-item
+								a.nav-link(href='#') Kids
+							li.nav-item
+								a.nav-link(href='#') Accessories
+							li.nav-item
+								a.nav-link(href='#') Sale
+						form.form-inline.my-2.my-lg-0
+							input.form-control(type='search', placeholder='Search', aria-label='Search')
+							span.icon.icon-search
 	
 	.container
 		.row
