@@ -1,0 +1,9 @@
+.sidebar {
+	padding-left: 1rem;
+	border-right: 3px solid $gray2;
+
+	@media ($tablet) {
+		padding-left: 0;
+		border-right: 0;
+	}
+}

@@ -1,0 +1,38 @@
+.widget {
+	padding: 2.875rem 0 .875rem;
+	border-bottom: 3px solid $gray2;
+
+	@media($small) {
+		border-bottom: none;
+	}
+	@media($phone) {
+		border-bottom: 3px solid $gray2;
+	}
+
+	h3 {
+		margin-bottom: 2rem;
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	li {
+		margin-bottom: .875rem;
+		font-size: 1rem;
+		line-height: 1;
+
+		@media ($medium) {
+			font-size: .875rem;
+			left: 1.2;
+		}
+
+		a {
+			color: $black;
+
+		}
+		&:last-child a {
+			color: $blue;
+		}
+	}
+}
