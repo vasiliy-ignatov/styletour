@@ -7403,7 +7403,7 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #fff; }
 
 .sidebar-slider {
-  padding-bottom: 15.62%;
+  padding-bottom: 37px;
   line-height: 1; }
   .sidebar-slider__title {
     font-size: 0.875rem;
@@ -7421,7 +7421,7 @@ a.text-dark:hover, a.text-dark:focus {
     padding: 11.3% 8.69%; }
   .sidebar-slider .slick-dots {
     width: 100%;
-    padding: 10px 15px;
+    padding: 14px 15px;
     transform: translate(-50%, 0);
     bottom: 0;
     border: none;
