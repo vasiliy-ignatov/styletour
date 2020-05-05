@@ -4,4 +4,25 @@
 	&_main {
 		position: relative;
 	}
+	&_tagline {
+		font-size: $fz-large;
+		line-height: $fz-large;
+		color: black;
+		background: $white;
+		border-bottom: 3px solid $gray2;
+
+		@media($medium) {
+			font-size: $fz-medium;
+			line-height: $fz-medium;
+		}
+
+		p {
+			padding: 3.125rem 0 2.375rem;
+			margin-bottom: 0;
+
+			@media($medium) {
+				padding: 30px 0 20px;
+			}
+		}
+	}
 }
