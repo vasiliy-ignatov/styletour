@@ -1,5 +1,70 @@
 extends ./tpl/layout
 
+block pageVar
+	-
+		goods1 = [
+			{
+				title: 'CREAM JANE JEANS DRESS',
+				desc: 'Signature NYX cosmetics',
+				price: '€10.00',
+				sale: false
+			},
+			{
+				title: 'CREAM SISSI TUNIC',
+				desc: 'Lightweight with just a hint of sheer color, this hydrating',
+				price: '€20.00',
+				sale: true
+			},
+			{
+				title: 'Big doodle shawl - blue/black',
+				desc: 'Lightweight with just a hint of sheer color, this hydrating',
+				price: '€09.00',
+				sale: false
+			}
+		];
+	-
+		goods2 = [
+			{
+				title: 'CREAM SISSI TUNIC',
+				desc: 'Lightweight with just a hint of sheer color, this hydrating',
+				price: '€20.00',
+				sale: true
+			},
+			{
+				title: 'big doodle shawl - blue/black',
+				desc: 'Lightweight with just a hint of sheer color, this hydrating ',
+				price: '€09.00',
+				sale: false
+			},
+			{
+				title: 'big doodle shawl - blue/black',
+				desc: 'Lightweight with just a hint of sheer color, this hydrating ',
+				price: '€09.00',
+				sale: false
+			}
+		]
+	-
+		goods3 = [
+			{
+				title: 'CREAM SISSI TUNIC',
+				desc: 'Lightweight with just a hint of sheer color, this hydrating',
+				price: '€20.00',
+				sale: true
+			},
+			{
+				title: 'big doodle shawl - blue/black',
+				desc: 'Lightweight with just a hint of sheer color, this hydrating ',
+				price: '€09.00',
+				sale: false
+			},
+			{
+				title: 'big doodle shawl - blue/black',
+				desc: 'Lightweight with just a hint of sheer color, this hydrating ',
+				price: '€09.00',
+				sale: false
+			}
+		]
+
 block page
 	section.section.section_main
 		.main-slider.js-main-slider
@@ -129,24 +194,68 @@ block page
 									p.colored Ut enim ad minim veniam, quis nostrud exercitation. Aiusmod tempor incididunt ut labore et dolore magna aliqua
 					.col-12.col-md-9.order-first.order-md-last
 						.content
-							h3 Items on Demand
-							.row
-								.col-12.col-md-4.block
-									.product-card
-										.product-card__sale Sale
-										.product-card__favorite
-										.product-card__image
-											.product-card__image-wrapper
-												img(src="./img/goods1.jpg", alt="")
-										.product-card__title
-											| CREAM JANE JEANS DRESS
-										.product-card__desc
-											| Signature NYX cosmetics Signature NYX cosmetics
-										.product-card__buy
-											.product-card__price Price: €10.00
-											.btn Add to cart
-								.col-12.col-md-4.block product-2
-								.col-12.col-md-4.block product-3
+							.content__row
+								h3 Items on Demand
+								.row
+									each val, index in goods1
+										.col-12.col-md-4
+											.product-card
+												if (val.sale)
+													.product-card__sale Sale
+												.product-card__favorite
+												.product-card__image
+													.product-card__image-wrapper
+														img(src="./img/goods"+ (index + 1) +".jpg", alt="")
+												.product-card__title= val.title
+												.product-card__desc= val.desc
+												.product-card__buy
+													.product-card__price= 'Price: ' + val.price
+													.btn Add to cart
+							.content__row
+								h3 Featured Items
+								.row
+									each val, index in goods2
+										.col-12.col-md-4
+											.product-card
+												if (val.sale)
+													.product-card__sale Sale
+												.product-card__favorite
+												.product-card__image
+													.product-card__image-wrapper
+														img(src="./img/goods"+ (index + 4) +".jpg", alt="")
+												.product-card__title= val.title
+												.product-card__desc= val.desc
+												.product-card__buy
+													.product-card__price= 'Price: ' + val.price
+													.btn Add to cart
+							
+							.content__row
+								.row
+									- for (var i = 1; i <= 3; i++)
+										.col-12.col-md-4
+											.content__banner
+												a(href="#")
+													img(src="./img/content-banner"+ i +".jpg", alt="")
+							.content__row
+								h3 Latest Arrivals
+								.row
+									each val, index in goods3
+										.col-12.col-md-4
+											.product-card
+												if (val.sale)
+													.product-card__sale Sale
+												.product-card__favorite
+												.product-card__image
+													.product-card__image-wrapper
+														img(src="./img/goods"+ (index + 7) +".jpg", alt="")
+												.product-card__title= val.title
+												.product-card__desc= val.desc
+												.product-card__buy
+													.product-card__price= 'Price: ' + val.price
+													.btn Add to cart
+
+								//- .col-12.col-md-4.block product-2
+								//- .col-12.col-md-4.block product-3
 
 	.container
 		.row

@@ -1,6 +1,14 @@
 .content {
 	padding-top: 2.875rem;
 
+	&__row {
+		margin-bottom: 3rem;
+	}
+	&__banner {
+		@media ($tablet) {
+			margin-bottom: 3rem;
+		}
+	}
 	h3 {
 		margin-bottom: 3rem;
 	}
