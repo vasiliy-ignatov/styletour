@@ -7,6 +7,8 @@
 @import "mainMenu";
 @import "widget";
 @import "./sidebar/sidebar";
+@import "content";
+@import "product-card";
 
 html, body {
 	background-color: $body;
