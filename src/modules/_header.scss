@@ -21,6 +21,23 @@
 			line-height: $fz-small;
 			position: relative;
 			text-transform: uppercase;
+
+			@media ($medium) {
+				margin: 0;
+			}
+			@media ($phone) {
+				width: 100%;
+			}
+		}
+	}
+	.form-inline {
+		@media ($medium) {
+			display: block;
+		}
+	}
+	.navbar-nav {
+		@media ($medium) {
+			border-bottom: 1px solid $gray8;
 		}
 	}
 	.navbar-light .navbar-nav .nav-link {
