@@ -70,7 +70,7 @@ function fonts() {
 }
 
 function img() {
-	return src(PATHS.IN + '/img/*.*')
+	return src(PATHS.IN + '/img/**/*.*')
 		.pipe(dest(PATHS.OUT + '/img/'));
 }
 
