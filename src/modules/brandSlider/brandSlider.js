@@ -4,7 +4,6 @@ var BrandSlider = {
 	el: $('.js-brand-slider'),
 	options: {
 		infinite: true,
-		speed: 300,
 		slidesToShow: 5,
 		centerMode: true,
 		variableWidth: true,

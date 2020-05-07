@@ -49,6 +49,23 @@
 		color: $black;
 		z-index: 1;
 		cursor: default;
+
+		@media ($wide) {
+			width: 30px;
+			height: 30px;
+			font-size: 10px;
+			line-height: 28px;
+			top: 8px;
+			left: 8px;
+		}
+		@media ($tablet) {
+			width: 54px;
+			height: 54px;
+			top: .875rem;
+			left: 1.25rem;
+			font-size: .875rem;
+			line-height: 54px;
+		}
 	}
 	&__favorite {
 		position: absolute;
@@ -64,6 +81,15 @@
 		opacity: 0;
 		transition: opacity .5s;
 		cursor: pointer;
+
+		@media ($wide) {
+			top: 15px;
+			right: 8px;
+		}
+		@media ($tablet) {
+			top: .875rem;
+			right: 1.25rem;
+		}
 	}
 	&__title {
 		height: 1.125rem;

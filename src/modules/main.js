@@ -1,5 +1,3 @@
 'use strict'
 
-$("document").ready(function() {
-	console.log('hello world');
-});
+//some project code here

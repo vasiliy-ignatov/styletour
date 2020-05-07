@@ -7551,6 +7551,22 @@ a.text-dark:hover, a.text-dark:focus {
     color: #000;
     z-index: 1;
     cursor: default; }
+    @media (max-width: 1200px) {
+      .product-card__sale {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+        line-height: 28px;
+        top: 8px;
+        left: 8px; } }
+    @media (max-width: 768px) {
+      .product-card__sale {
+        width: 54px;
+        height: 54px;
+        top: .875rem;
+        left: 1.25rem;
+        font-size: .875rem;
+        line-height: 54px; } }
   .product-card__favorite {
     position: absolute;
     top: .875rem;
@@ -7565,6 +7581,14 @@ a.text-dark:hover, a.text-dark:focus {
     opacity: 0;
     transition: opacity .5s;
     cursor: pointer; }
+    @media (max-width: 1200px) {
+      .product-card__favorite {
+        top: 15px;
+        right: 8px; } }
+    @media (max-width: 768px) {
+      .product-card__favorite {
+        top: .875rem;
+        right: 1.25rem; } }
   .product-card__title {
     height: 1.125rem;
     margin-bottom: 9px;

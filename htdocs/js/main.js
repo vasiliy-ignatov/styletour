@@ -1,15 +1,13 @@
 'use strict'
 
-$("document").ready(function() {
-	console.log('hello world');
-});
+//some project code here
+
 'use strict'
 
 var BrandSlider = {
 	el: $('.js-brand-slider'),
 	options: {
 		infinite: true,
-		speed: 300,
 		slidesToShow: 5,
 		centerMode: true,
 		variableWidth: true,
