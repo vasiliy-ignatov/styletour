@@ -254,9 +254,6 @@ block page
 													.product-card__price= 'Price: ' + val.price
 													.btn Add to cart
 
-								//- .col-12.col-md-4.block product-2
-								//- .col-12.col-md-4.block product-3
-
 	section.section
 		.subscribe
 			.container
@@ -274,6 +271,40 @@ block page
 									input.form-control(type="text" placeholder="your email address")
 								.col-12.col-md-4.col-lg-2
 									.btn(type="submit") Subcribe
+	section.section.section_white
+		.container
+			.brand-slider.js-brand-slider
+				-
+					brandSlides = [
+						{
+							file: './img/partner1.jpg',
+							width: 112
+						},
+						{
+							file: './img/partner2.jpg',
+							width: 165
+						},
+						{
+							file: './img/partner3.jpg',
+							width: 271
+						},
+						{
+							file: './img/partner4.jpg',
+							width: 109
+						},
+						{
+							file: './img/partner5.jpg',
+							width: 104
+						},
+						{
+							file: './img/partner6.jpg',
+							width: 93
+						}
+					]
+				each val, index in brandSlides
+					.brand-slider__item(style="width: "+ val.width +"px;")
+						a(href="#")
+							img(src=val.file)
 	.container
 		.row
 			.col-4.col-lg-2.col-md-3.col-sm-6.block

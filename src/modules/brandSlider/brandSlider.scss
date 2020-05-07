@@ -1,0 +1,16 @@
+.brand-slider {
+	position: relative;
+
+	&__item {
+		margin: 0 18px;
+		line-height: 130px;
+		text-align: center;
+	}
+	img {
+		display: inline;
+		line-height: 130px;
+	}
+	a:focus {
+		outline: none;
+	}
+}

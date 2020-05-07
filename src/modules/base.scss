@@ -10,6 +10,8 @@
 @import "content";
 @import "product-card";
 @import "subscribe";
+@import "./brandSlider/brandSlider";
+@import "slick";
 
 html, body {
 	background-color: $body;
@@ -20,8 +22,6 @@ html, body {
 }
 main {
 	width: 100%;
-	max-width: 1600px;
-	margin: 0 auto;
 }
 
 .container {
@@ -52,43 +52,6 @@ h3 {
 	&:hover {
 		color: $white;
 		background-color: #f4341c;
-	}
-}
-
-.slick-dots {
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 10px 15px;
-	margin: 0;
-	list-style: none;
-	font-size: 0;
-	z-index: 1;
-	background-color: #fff;
-	border: 1px solid #cfcfcf;
-	border-radius: 5px;
-
-	li {
-		display: inline-block;
-		vertical-align: middle;
-	}
-	button {
-		width: 8px;
-		height: 8px;
-		border: none;
-		outline: none;
-		background-color: #d2d2d2;
-		border-radius: 50%;
-		padding: 0;
-		margin: 0 10px;
-		transition: background-color .3s;
-
-		&:hover {
-			background-color: #a3a3a3;
-		}
-	}
-	.slick-active button {
-		background-color: #a3a3a3;
 	}
 }
 
