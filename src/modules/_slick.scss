@@ -44,6 +44,9 @@
 		transform: translateX(-35%) translateY(-50%) rotate(-135deg);
 	}
 }
+.slick-slide:focus {
+	outline: none;
+}
 .slick-dots {
 	position: absolute;
 	left: 50%;

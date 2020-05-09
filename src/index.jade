@@ -230,12 +230,13 @@ block page
 													.btn Add to cart
 							
 							.content__row
-								.row
-									- for (var i = 1; i <= 3; i++)
-										.col-12.col-md-4
-											.content__banner
-												a(href="#")
-													img(src="./img/content-banner"+ i +".jpg", alt="")
+								.content__banners
+									.row
+										- for (var i = 1; i <= 3; i++)
+											.col-12.col-md-4
+												.content__banner
+													a(href="#")
+														img(src="./img/content-banner"+ i +".jpg", alt="")
 							.content__row
 								h3 Latest Arrivals
 								.row

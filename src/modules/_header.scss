@@ -59,6 +59,11 @@
 			padding: 0.575rem 0;
 		}
 	}
+	.nav-item:last-child .dropdown-menu {
+		@media ($tablet) {
+			margin-bottom: .575rem;
+		}
+	}
 	.dropdown-menu {
 		font-size: $fz-small;
 	}
