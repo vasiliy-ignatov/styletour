@@ -8,7 +8,16 @@ var BrandSlider = {
 		centerMode: true,
 		variableWidth: true,
 		cssEase: 'ease-in-out',
-		speed: 500
+		speed: 500,
+		responsive: [
+			{
+				breakpoint: 769,
+				settings: {
+					autoplay: true,
+					autoplaySpeed: 2000
+				}
+			}
+		]	
 	},
 	init: function() {
 		return this.el.slick(this.options);
