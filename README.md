@@ -1,5 +1,4 @@
-# Styletour
-Верстка макета интернет-магазина(Bootstrap v4.4.1, Gulp v4.0.2)
+## [Styletour](https://vasiliy-ignatov.github.io/styletour/htdocs/)
 
 Установка модульных зависимостей
 ```bash
